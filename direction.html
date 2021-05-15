@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<style>
+form {
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;
+}
+.f1{
+  animation: example 5s infinite;
+  animation-direction:normal; 
+}
+.f2{
+  animation:example 5s infinite;
+  animation-direction:reverse;
+}
+.f3{
+  animation:example 5s infinite;
+  animation-direction:alternate;
+}
+
+@keyframes example{
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="main.html">Home</a></li>
+</ul>
+
+<div style="float: left;margin-left: 30px;">
+<h2>Animation-Direction-Normal</h2>
+<form class="f1"></form>
+</div>
+<div style="float: right;margin-right:80px;">
+<h2>Code:</h2>
+<textarea rows="23" cols="80" readonly> 
+form {
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;
+}
+.f1{
+  animation: example 5s infinite;
+  animation-direction:normal; 
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+<h2>Animation-Direction-Normal</h2>
+<form class="f1"></form>
+</textarea>
+</div>
+
+<hr style="width:100%;height:2px;border-width:0;background-color:black">
+
+<div style="float: left;margin-left: 30px;">
+<h2>Animation-Direction-Reverse</h2>
+<form class="f2"></form>
+</div>
+<div style="float: right;margin-right:80px;">
+<h2>Code:</h2>
+<textarea rows="23" cols="80" readonly> 
+form {
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;
+}
+.f2{
+  animation-duration: 5s infinite;
+  animation-direction:reverse;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+<h2>Animation-Direction-Normal</h2>
+<form class="f2"></form>
+</textarea>
+</div>
+
+<hr style="width:100%;height:2px;border-width:0;background-color:black">
+
+<div style="float: left;margin-left: 30px;">
+<h2>Animation-Direction-Alternative</h2>
+<form class="f3"></form>
+</div>
+<div style="float: right;margin-right:80px;">
+<h2>Code:</h2>
+<textarea rows="23" cols="80" readonly> 
+form {
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;
+}
+
+.f3{
+  animation:example 5s infinite;
+  animation-direction:alternate;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+<h2>Animation-Direction-Alternative</h2>
+<form class="f3"></form>
+</textarea>
+</div>
+
+</body>
+</html>

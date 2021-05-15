@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<style>
+form{
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;  
+  animation-name: duration;
+  animation-duration: 5s;
+}
+
+@keyframes duration{
+  from {left: 0px;}
+  to {left: 400px;}
+}
+	</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="main.html">Home</a></li>
+</ul>
+	<div style="float: left;margin-left: 30px" >
+	<h2>Animation Duration</h2>
+	<form></form>
+	</div>
+	<div style="float: right;" >
+		<h2>Code:</h2>
+		<textarea rows="17" cols="80" readonly>
+form{
+  width: 225px;
+  height: 150px;
+  background-image: url('cycle.jpg');
+  position: relative;  
+  animation-name: duration;
+  animation-duration: 5s;
+}
+
+@keyframes duration{
+  from {left: 0px;}
+  to {left: 400px;}
+}
+
+<h2>Animation Duration</h2>
+<form></form>
+
+
+			
+		</textarea>
+	</div>	
+</body>
+</html>
